@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styless.css"/>
+  </head>
+  <body>
+   <!--<form>
+        <label for="text">Name</label>
+        <input type="text" id="text">
+
+        <label> Password
+            <input type="password">
+        </label>
+
+        <label for="city">Select city</label>
+        <select name="city" id="city">
+            <option value="Kyiv">Kyiv</option>
+            <option value="Dnipro">Dnipro</option>
+            <option value="Lviv">Lviv</option>
+        </select>
+
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+        <label>
+            <input type="checkbox"> Я приймаю умови договору
+        </label>
+
+        <label>
+            <input type="radio" name="1"> Варіант 1
+        </label>
+        <label>
+            <input type="radio" name="1"> Варіант 2
+        </label>
+
+    </form>-->
+
+    <!-- ------------------------------Валідація------------------------------ -->
+
+    <!-- 1. required, обов'язкові поля -->
+    <!-- <form>
+        <label> Email
+            <input type="email" required>
+        </label>
+        <label> Password
+            <input type="password" required>
+        </label>
+        <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- 2. minlength, maxlength, обмеження довжини -->
+    <!-- <form>
+        <label> Username
+            <input type="text" required minlength="3">
+        </label>
+        <label> Password
+            <input type="password" required minlength="6" maxlength="12">
+        </label>
+        <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- 3. min, max, обмеження значення -->
+    <!-- <form>
+      <label>
+        Скільки піц ви бажаєте замовити?
+        <input type="number" required min="1" max="5" />
+      </label>
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- 4. pattern, регулярний вираз (шаблон)  -->
+    <!-- <form>
+      <label> Username
+        <input type="text" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Ім'я користувача має складатися з 2 слів (англійською) через пробіл" />
+      </label>
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- ------------------------------Псевдокласи стану у формах ------------------------------ -->
+    <!-- 1. enabled, disabled -->
+    <!-- <button class="btn">Active button</button>
+    <button class="btn" disabled>Disabled button</button> -->
+
+    <!-- 2. checked -->
+    <!-- <form>
+        <h2>Які в тебе хобі?</h2>
+        <div>
+            <input type="checkbox" class="form-input" id="sport">
+            <label for="sport" class="form-label">Спорт</label>
+        </div>
+        <div>
+            <input type="checkbox" class="form-input" id="music">
+            <label for="music" class="form-label">Музика</label>
+        </div>
+        <div>
+            <input type="checkbox" class="form-input" id="books">
+            <label for="books" class="form-label">Книги</label>
+        </div>
+        <button type="submit">Відправити</button>
+    </form> -->
+
+    <!-- 3. :in-range і :out-of-range -->
+    <!-- <form>
+        <div>
+            <label for="1" class="form-label">Скільки піц ви бажаєте замовити?</label>
+            <input type="number" class="form-input" id="1" required min="1" max="10" step="1" value="0">
+        </div>
+        <div>
+            <label for="2" class="form-label">Скільки піц ви бажаєте замовити?</label>
+            <input type="number" class="form-input" id="2" required min="1" max="10" step="2" value="3">
+        </div>
+        <div>
+            <label for="3" class="form-label">Скільки піц ви бажаєте замовити?</label>
+            <input type="number" class="form-input" id="3" required min="1" max="10" step="0.5">
+        </div>
+        <button type="submit">Відправити</button>
+    </form> -->
+
+    <!-- 4. :required, :optional​-->
+    <!-- <form>
+        <label class="form-label"> Username (optional)
+            <input type="text" class="form-input">
+        </label>
+        <label class="form-label"> Email (required)
+            <input type="email" class="form-input" required>
+        </label>
+        <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- 5. :valid, :invalid -->
+    <!-- <form>
+        <label class="form-label"> Username 
+            <input type="text" class="form-input" required minlength="3">
+        </label>
+        <label class="form-label"> Email
+            <input type="email" class="form-input" required>
+        </label>
+        <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- 6-7. :placeholder-shown​, композиція псевдокласів -->
+    <!-- <form>
+        <label class="form-label">Username
+            <input type="text" class="form-input" required minlength="3" placeholder="Jhon Medko">
+        </label>
+    </form> -->
+
+    <!-- 8. :focus-within -->
+    <!-- <form>
+        <label class="form-label"> First name
+            <input type="text" class="form-input">
+        </label>
+        <label class="form-label"> Last name
+            <input type="text" class="form-input">
+        </label>
+        <button type="submit">Submit</button>
+    </form> -->
+  </body>
+</html>

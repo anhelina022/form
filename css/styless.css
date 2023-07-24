@@ -1,0 +1,140 @@
+/*----------------------- Валідація ----------------------- */
+/* required, minlength, maxlength, min, max, pattern */
+/* form {
+  width: 300px;
+}
+
+input {
+  padding: 8px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+button {
+  display: inline-block;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+} */
+
+/* ----------------------- Псевдокласи стану у формах ----------------------- */
+/* 1. ----------------------- enabled, disabled ----------------------- */
+/* .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+}
+.btn:hover, .btn:focus {
+    background-color: chocolate;
+}
+.btn:enabled {
+    cursor: pointer;
+}
+.btn:disabled {
+    background-color: antiquewhite;
+    cursor: not-allowed;
+} */
+
+/* 2. ----------------------- checked ----------------------- */
+/* .form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    cursor: pointer;
+}
+.form-input:checked + label {
+    color: lightsalmon;
+} */
+/* 3. ----------------------- :in-range і :out-of-range ----------------------- */
+/* .form-input:in-range {
+    border-color: greenyellow;
+}
+
+.form-input:out-of-range {
+    border-color: red;
+} */
+
+/* 4. ----------------------- :required, :optional ---------------*/
+/* form {
+    width: 300px;
+}
+.form-label {
+    display: flex;
+    flex-direction: column;
+}
+.form-input:required {
+    border-color:brown;
+}
+.form-input:optional {
+    border-color:cadetblue;
+} */
+/* 5. ----------------------- :valid, :invalid ----------------------- */
+/* form {
+    width: 300px;
+}
+.form-label {
+    display: flex;
+    flex-direction: column;
+}
+input:valid {
+    border: 2px solid green;
+}
+input:invalid {
+    border: 2px solid red;
+} */
+
+/* 6. ----------------------- :placeholder-shown ----------------------- */
+/* input::placeholder{
+    color: grey;
+}
+input:placeholder-shown{
+    border-color: blue;
+}*/
+/* 7. ----------------------- Композиція псевдокласів ----------------------- */
+/* input:not(:placeholder-shown):required:valid {
+    border-color: greenyellow;
+} */
+
+/* 8. ----------------------- :focus-within ----------------------- */
+/* form {
+    width: 300px;
+    padding: 25px;
+    border: 2px dashed grey;
+}
+.form-label {
+    display: flex;
+    flex-direction: column;
+}
+.form-input {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+}
+button {
+    display: block;
+    padding: 10px 30px;
+    color: white;
+    background-color: blue;
+    margin: 20px auto 0;
+    cursor: pointer;
+} */
+/* підсвічуєтья при натисканні на елементи форми */
+/* form:focus-within {
+    border-color:aqua;
+} */
+/* лейбл буде підсвічуватися, коли користувач натисне на інпут */
+/* label:focus-within {
+    color:darkgreen;
+} */
